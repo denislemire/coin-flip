@@ -2,8 +2,8 @@ version: 2.1
 
 description: >
   Simple Orb for demo purposes
-# What will your orb allow users to accomplish?
-# Descriptions should be short, simple, and informative.
+
+  Will make it flip a coin randomly. Doesn't have a real purpose beyond a simple demo
 
 # This information will be displayed in the orb registry and is not mandatory.
 display:
