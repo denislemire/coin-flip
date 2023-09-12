@@ -5,5 +5,5 @@ steps:
       name: Coin Flip
       command: <<include(scripts/coinflip.sh)>>
   - store_artifacts:
-      path: /tmp/workspace/coin.txt
+      path: workspace/coin.txt
       destination: coin.txt
