@@ -3,7 +3,7 @@ description: >
 steps:
   - run:
       name: Coin Flip
-      command: "{ [ $((RANDOM%2)) -eq 0 ] && echo heads || echo tails; } | tee workspace/coin.txt"
+      command: <<include(scripts/coinflip.sh)>>
   - store_artifacts:
       path: /tmp/workspace/coin.txt
       destination: coin.txt
