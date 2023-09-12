@@ -1,0 +1,9 @@
+description: >
+  This command flips a coin echos the result and stores coin.txt as an artifact
+steps:
+  - run:
+      name: Coin Flip
+      command: "{ [ $((RANDOM%2)) -eq 0 ] && echo heads || echo tails; } | tee workspace/coin.txt"
+  - store_artifacts:
+      path: /tmp/workspace/coin.txt
+      destination: coin.txt
