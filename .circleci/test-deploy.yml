@@ -1,5 +1,6 @@
 version: 2.1
 orbs:
+  aws-cli: circleci/aws-cli@5.1.2
   # Your orb will be automatically injected here during the pipeline.
   # Reference your orb's jobs and commands below as they will exist when built.
   orb-tools: circleci/orb-tools@12.0
